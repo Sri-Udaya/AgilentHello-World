@@ -7,6 +7,7 @@ pipeline{
 			steps{
 				git branch: 'main', url: 'https://github.com/Sri-Udaya/AgilentHello-World.git'
 			}
+		}
 		stage('MAVEN build'){
 			steps{
 				sh 'mvn clean install package'
